@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" class="css">
+        <title>Tablica obiektów</title>
+    <script>
+        const table = [
+            { name: "imie1", age: 10, gender: "M" },
+            { name: "imie2", age: 20, gender: "M" },
+            { name: "imie3", age: 30, gender: "W" }
+        ];
+
+        function displayTable() {
+           n=table.length;
+           i=0;
+           while (i<n){
+            console.log(table[i].name);
+            console.log(table[i].age);
+            console.log(table[i].gender);
+            i++
+           }
+        }
+    </script>
+    </head>
+
+    <body>
+        <h1>Tablica obiektów</h1>
+        <button onclick="displayTable()">Wyświetl właściwości obiektów</button>   
+    </body>
+</html>
